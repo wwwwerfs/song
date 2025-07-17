@@ -1,0 +1,41 @@
+:root {
+  --primary-color: #8e1f1f;
+  --secondary-color: #d4af37;
+  --bg-color: #f9f3e9;
+  --text-color: #3d2b1f;
+  --border-color: #c9a87c;
+  --shadow-color: rgba(61, 43, 31, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none" stroke="%23c9a87c" stroke-width="0.5" opacity="0.3"/></svg>');
+  min-height: 100vh;
+  font-family: 'Noto Serif SC', serif, 'Microsoft YaHei', sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

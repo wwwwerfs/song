@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>红楼梦阅读器</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg">
+</head>
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+  
+  <!-- 添加装饰元素 -->
+  <div class="decoration top-right">
+    <i class="fas fa-dragon"></i>
+  </div>
+  <div class="decoration bottom-left">
+    <i class="fas fa-feather"></i>
+  </div>
+  
+  <style>
+    /* 全局装饰元素样式 */
+    .decoration {
+      position: fixed;
+      opacity: 0.05;
+      pointer-events: none;
+      z-index: 0;
+    }
+    
+    .decoration.top-right {
+      top: 20px;
+      right: 20px;
+      font-size: 120px;
+      transform: rotate(15deg);
+      color: #8e1f1f;
+    }
+    
+    .decoration.bottom-left {
+      bottom: 20px;
+      left: 20px;
+      font-size: 100px;
+      transform: rotate(-10deg);
+      color: #d4af37;
+    }
+    
+    /* 全局过渡动画 */
+    .fade-enter-active,
+    .fade-leave-active {
+      transition: opacity 0.3s ease;
+    }
+    
+    .fade-enter-from,
+    .fade-leave-to {
+      opacity: 0;
+    }
+  </style>
+</body>
+</html>
